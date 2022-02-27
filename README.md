@@ -1,2 +1,2 @@
-# Algorithm_Datastructure
+# Coding Test
 coding test prep
