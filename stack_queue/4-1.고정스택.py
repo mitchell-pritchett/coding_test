@@ -11,7 +11,7 @@ class FixedStack:
         self.capacity = capacity
         self.ptr = 0
     
-    def __len__(self) -> int:
+    def __len__(self) -> int: # __len__()를 정의하면 클래스형의 인스턴스를 len() 함수에 전달할 수 있다. len(class_obj) 이런 식으로
         return self.ptr
     
     def is_empty(self) -> bool:
@@ -56,7 +56,7 @@ class FixedStack:
                 counter += 1
         return counter 
 
-    def __contains__(self, value: Any) -> bool:
+    def __contains__(self, value: Any) -> bool: # __contains__() 함수를 정의하면 클래스형의 인스턴스에 맴버십 판단 연산자 in을 적용할 수 있다.
         return self.count(value) > 0
     
     def dump(self) -> None:
